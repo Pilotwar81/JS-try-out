@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yehia islam store </title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap 4.4.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Fontawesome 5.11.2 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<link rel="stylesheet" href="css/stylesheet.css">
+<body>
+
+    <div id="header-include"></div>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+    
+        
+    
+      <div class="container">    
+        <!-- cards -->
+
+        <div class="card-deck p-5">
+            <div class="card">
+                <img class="card-img-top" src="pic/pro1.jpg" width="50%" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Journal notebook</h6>
+                    <p class="card-text">
+                     Dark notebook by Note press.
+                    </p>
+                    <hr>
+                    <div class="text-center">
+                        <h4>6.99</h4>
+                       <div aria-label="Basic example">
+                        <p><a class="btn btn-outline-info" onclick="fun1()">Know more</a></p>                                         
+                        <p id="kn1"></p>
+                        <p id="kn2"></p>
+                        <div id="div">
+                        <p id="kn3"></p>
+                        <p id="kn4"></p>
+                        </div>
+                     </div> 
+                     <script>
+                        var counter = 1;
+
+                        function fun1(){
+                        counter = counter + 1 ;
+                        if(counter % 2 != 1) {
+                        var element = document.getElementById("kn1");
+                        element.classList.add("btn-outline-info");
+                        element.classList.add("btn");
+                        var element = document.getElementById("kn2");
+                        element.classList.add("btn-outline-info");
+                        element.classList.add("btn");      				          
+                        document.getElementById("kn1").innerHTML = "<a >Coming Soon</a>";
+                        document.getElementById("kn2").innerHTML = "<a  onclick="+"fun2()"+">Check the author</a>";
+                        }
+                        else {
+                            window.location.reload();
+                        }
+                    }
+  			           
+                     
+                        function fun2() {
+                        counter = counter + 1 ;
+                        var element = document.getElementById("div");
+                        element.classList.add("btn-group");
+                        var element = document.getElementById("kn3");
+                        element.classList.add("btn-outline-info");
+                        element.classList.add("btn");
+                        var element = document.getElementById("kn4");
+                        element.classList.add("btn-outline-info");
+                        element.classList.add("btn");      				          
+                        document.getElementById("kn3").innerHTML = "<a href="+"https://pilotwar81.github.io/My-Portfolio-website-/"+"> Desktop portofolio </a>";
+                        document.getElementById("kn4").innerHTML = "<a href="+"https://pilotwar81.github.io/Yehia.islam-bio/"+"> Phone portofolio</a>";
+  			           
+                    }
+                
+
+
+                       
+                     </script>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+            <img class="card-img-top" src="pic/pro2.jpg" width="50%" alt="">
+            <div class="card-body">
+                <h6 class="card-title">Journal notebook</h6>
+                <p class="card-text">
+                  Calm notebook by Note press.
+                </p>
+                <hr>
+                <div class="text-center">
+                    <h4>6.99</h4>
+                   <div  aria-label="Basic example">
+                    <p><a class="btn btn-outline-info" onclick="funn1()">Know more</a></p>                                         
+                    <p id="knn1"></p>
+                    <p id="knn2"></p>
+                    <div id="div2">
+                    <p id="knn3"></p>
+                    <p id="knn4"></p>
+                    </div>
+                 </div> 
+                 <script>
+                    var counter = 1;
+
+                    function funn1(){
+                    counter = counter + 1 ;
+                    if(counter % 2 != 1) {
+                    var element = document.getElementById("knn1");
+                    element.classList.add("btn-outline-info");
+                    element.classList.add("btn");
+                    var element = document.getElementById("knn2");
+                    element.classList.add("btn-outline-info");
+                    element.classList.add("btn");      				          
+                    document.getElementById("knn1").innerHTML = "<a >Coming Soon</a>";
+                    document.getElementById("knn2").innerHTML = "<a  onclick="+"funn2()"+">Check the author</a>";
+                    }
+                    else {
+                        window.location.reload();
+                    }
+                }
+                     
+                 
+                    function funn2() {
+                    counter = counter + 1 ;
+                    var element = document.getElementById("div2");
+                    element.classList.add("btn-group");
+                    var element = document.getElementById("knn3");
+                    element.classList.add("btn-outline-info");
+                    element.classList.add("btn");
+                    var element = document.getElementById("knn4");
+                    element.classList.add("btn-outline-info");
+                    element.classList.add("btn");      				          
+                    document.getElementById("knn3").innerHTML = "<a href="+"https://pilotwar81.github.io/My-Portfolio-website-/"+"> Desktop portofolio </a>";
+                    document.getElementById("knn4").innerHTML = "<a href="+"https://pilotwar81.github.io/Yehia.islam-bio/"+"> Phone portofolio</a>";
+                     
+                }
+            
+
+
+                   
+                 </script>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
